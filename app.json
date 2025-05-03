@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "chat-app-react-native",
+    "name": "Chat App",
     "slug": "chat-app-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -16,7 +16,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.anonymous.chatappreactnative"
     },
     "web": {
       "bundler": "metro",
@@ -28,11 +29,15 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo.webp",
-          "imageWidth": 200,
+          "image": "./assets/images/second.webp",
+          "mdpi": "./assets/images/second.webp",
+          "hdpi": "./assets/images/second.webp",
+          "xhdpi": "./assets/images/second.webp",
+          "xxhdpi": "./assets/images/second.webp",
+          "xxxhdpi": "./assets/images/second.webp",
+          "imageWidth": 100,
           "resizeMode": "cover",
-          
-          "backgroundColor": "red"
+          "backgroundColor": "black"
         }
       ]
     ],
