@@ -4,7 +4,7 @@
     "slug": "chat-app-react-native",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/logo.webp",
+    "icon": "./assets/images/new-icon.png",
     "scheme": "chatappreactnative",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,7 +13,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/new-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
@@ -29,20 +29,22 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/second.webp",
-          "mdpi": "./assets/images/second.webp",
-          "hdpi": "./assets/images/second.webp",
-          "xhdpi": "./assets/images/second.webp",
-          "xxhdpi": "./assets/images/second.webp",
-          "xxxhdpi": "./assets/images/second.webp",
+          "image": "./assets/images/new-logo.png",
           "imageWidth": 100,
           "resizeMode": "cover",
-          "backgroundColor": "black"
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d7dcbfb9-87e2-4583-b3a0-3bb65c733344"
+      }
+    },
+    "owner": "sayel111"
   }
 }
