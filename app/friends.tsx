@@ -4,15 +4,30 @@ import React, { useState } from "react";
 export default function Friends() {
   const [currentTab, setCurrentTab] = useState("friends");
   return (
-    <View className="flex-1 bg-white">
-      <View className="flex flex-row gap-6 items-center justify-center">
-        <Pressable onPress={() => alert("Pressed!")}>
-          <Text className="bg-blue-500 text-white text-2xl py-1 font-semibold">
+    <View className="flex-1 bg-white px-4">
+      <View className="flex flex-row gap-6 items-center justify-center w-[80%] mx-auto mt-4">
+        <Pressable onPress={() => setCurrentTab("friends")} className="w-1/2">
+          <Text
+            className={`${
+              currentTab === "friends"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-200 text-black"
+            }  py-2 text-center rounded-lg`}
+          >
             Friends
           </Text>
         </Pressable>
-        <Pressable onPress={() => alert("Pressed!")}>
-          <Text className="bg-blue-500 text-white text-2xl py-1 font-semibold">
+        <Pressable
+          onPress={() => setCurrentTab("add-friends")}
+          className="w-1/2"
+        >
+          <Text
+            className={`${
+              currentTab === "add-friends"
+                ? "bg-blue-500 text-white"
+                : "bg-gray-200 text-black"
+            }  py-2 text-center rounded-lg`}
+          >
             Add Friends
           </Text>
         </Pressable>
