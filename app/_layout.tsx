@@ -1,7 +1,8 @@
 import Hero from "@/components/ui/Hero";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import AntDesign from "@expo/vector-icons/AntDesign";
-import FontAwesome from '@expo/vector-icons/FontAwesome';
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import Ionicons from "@expo/vector-icons/Ionicons";
 import { Tabs } from "expo-router";
 import React from "react";
 import { Platform, StatusBar } from "react-native";
@@ -54,6 +55,16 @@ export default function RootLayout() {
             title: "Friends",
             tabBarIcon: ({ color }) => (
               <FontAwesome name="user-o" size={25} color={color} />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="notifications"
+          options={{
+            headerShown: false,
+            title: "Notifications",
+            tabBarIcon: ({ color }) => (
+              <Ionicons name="notifications-outline" size={25} color={color} />
             ),
           }}
         />
