@@ -1,10 +1,14 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import { Link } from "expo-router";
 
 export default function SignUp() {
   return (
     <View>
-      <Text>Get Started</Text>  
+      <View>
+        <Link href="/login">Login</Link>
+        <Text>Register</Text>
+      </View>
     </View>
-  )
+  );
 }

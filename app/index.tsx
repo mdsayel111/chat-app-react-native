@@ -1,7 +1,11 @@
+import { selectUser } from "@/redux/slices/userSlice";
+import { useAppSelector } from "@/redux/store";
 import React from "react";
 import { Image, Text, View } from "react-native";
 
 export default function Home() {
+  const user = useAppSelector((state) => state.user);
+  console.log(user);
   return (
     // <SafeAreaView className="px-4 flex-1 bg-white">
     <View className="px-4 flex-1 bg-white">
